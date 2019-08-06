@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlayersService } from 'src/app/services/players.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-players',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private playersService: PlayersService) { }
 
   ngOnInit() {
+    console.log('testing');
+    this.playersService.getAllPlayers().subscribe((response) => {
+      console.log('response ===>', response);
+    });
   }
 
 }
