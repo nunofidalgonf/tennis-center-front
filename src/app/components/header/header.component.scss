@@ -1,0 +1,44 @@
+header {
+    background: darkslategrey;
+    margin-bottom: 28px;
+  
+    #logo {
+      color: #ff7b00;
+      font-weight: 700;
+      padding: 15px 0;
+      display: block;
+    }
+  
+    ul {
+      list-style-type: none;
+      float: left;
+      margin: 0;
+      padding: 0;
+      float: right;
+  
+      li {
+        display: inline;
+        float: left;
+      }
+  
+      a {
+        color: #ffffff;
+        padding: 15px 30px;
+        display: block;
+        font-weight: 400;
+  
+        &.router-link-active {
+          color: #ff7b00;
+        }
+  
+        &:hover {
+          color: #ff7b00;
+          text-decoration: #ff7b00;
+        }
+  
+      }
+  
+  
+    }
+  
+  }
