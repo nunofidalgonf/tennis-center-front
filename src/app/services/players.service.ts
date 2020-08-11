@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase } from '@angular/fire/database';
-import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -8,10 +6,7 @@ import { Observable } from 'rxjs';
 })
 export class PlayersService {
 
-  constructor(private angularFireDB: AngularFireDatabase) { }
+  constructor() { }
 
-  public getAllPlayers(): Observable<any> {
-    return this.angularFireDB.list('players').valueChanges();
-  }
 
 }

@@ -13,9 +13,6 @@ export class PlayersComponent implements OnInit {
 
   ngOnInit() {
     console.log('testing');
-    this.playersService.getAllPlayers().subscribe((response) => {
-      console.log('response ===>', response);
-    });
   }
 
 }

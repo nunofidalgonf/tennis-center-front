@@ -1,10 +1,10 @@
-import { ModuleWithProviders } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router'; // CLI imports router
 
 import { PlayersComponent } from './pages/players/players.component';
 import { HomepageComponent } from './pages/homepage/homepage.component'
 
-export const router: Routes = [
+const routes: Routes = [
     {
         path: '',
         redirectTo: 'home',
@@ -20,4 +20,9 @@ export const router: Routes = [
     },
 ];
 
-export const routes: ModuleWithProviders = RouterModule.forRoot(router);
+// configures NgModule imports and exports
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}

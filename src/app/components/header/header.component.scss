@@ -1,44 +1,73 @@
 header {
-    background: darkslategrey;
-    margin-bottom: 28px;
+    background: #ffffff;
+    width: 300px;
+    height: 100vh;
+    position: relative;
+    float: left;
+    padding: 50px 18px;
   
-    #logo {
-      color: #ff7b00;
-      font-weight: 700;
-      padding: 15px 0;
-      display: block;
-    }
-  
-    ul {
-      list-style-type: none;
+    .header_element {
+      margin-bottom: 20px;
       float: left;
-      margin: 0;
-      padding: 0;
-      float: right;
-  
-      li {
-        display: inline;
+      width: 100%;
+    }
+
+    #title {
+      
+      #logo {
+        width: 20%;
         float: left;
       }
-  
-      a {
-        color: #ffffff;
-        padding: 15px 30px;
-        display: block;
-        font-weight: 400;
-  
-        &.router-link-active {
-          color: #ff7b00;
-        }
-  
-        &:hover {
-          color: #ff7b00;
-          text-decoration: #ff7b00;
-        }
-  
+
+      #app_info {
+        width: 80%;
+        float: left;
       }
-  
-  
+
+      #app_title {
+        color: #000000;
+        font-weight: 700;
+        padding: 0px 0 3px 0;
+        display: block;
+      }
+
+      #user_logged {
+        font-size: 12px;
+      }
     }
+
+    #navigation {
+      ul {
+        list-style-type: none;
+        float: left;
+        margin: 0;
+        padding: 0;
+    
+        li {
+          display: block;
+        }
+    
+        a {
+          color: #d2d2d2;
+          padding: 16px 30px;
+          display: block;
+          font-weight: 700;
+          text-decoration: none;
+    
+          &.router-link-active {
+            color: #000000;
+          }
+    
+          &:hover {
+            color: #d2d2d2;
+          }
+    
+        }
+    
+    
+      }
+    }
+  
+    
   
   }

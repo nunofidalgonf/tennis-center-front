@@ -1,15 +1,37 @@
 <header>
-  <div class="ui-g">
-    <section class="ui-g-12">
-      <div class="ui-g-3">
-        <a id="logo" [routerLink]="['/']">Tennis Center</a>
-      </div>
-      <div class="ui-g-9">
-        <ul>
-          <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a></li>
-          <li><a [routerLink]="['/players']" routerLinkActive="router-link-active">Players</a></li>
-        </ul>
-      </div>
-    </section>
-  </div>
+  <section class="header_element" id="title">
+    <div id="logo">
+      <img
+        src="https://dejpknyizje2n.cloudfront.net/marketplace/products/tennis-icon-on-red-sticker-1574287811.5843108.png"
+        width="40" height="40" />
+    </div>
+    <div id="app_info">
+      <span id="app_title">Tennis Center</span>
+      <span id="user_logged">Hello Jonas!</span>
+    </div>
+  </section>
+  <section class="header_element" id="navigation">
+    <div>
+      <ul>
+        <li>
+          <a [routerLink]="['/']" routerLinkActive="router-link-active">
+            <mat-icon aria-hidden="false" aria-label="home">home</mat-icon>
+            Home
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/players']" routerLinkActive="router-link-active">
+            <mat-icon aria-hidden="false" aria-label="players">user</mat-icon>
+            Players
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/players']" routerLinkActive="router-link-active">
+            <mat-icon aria-hidden="false" aria-label="players">id-card</mat-icon>
+            Member
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 </header>
