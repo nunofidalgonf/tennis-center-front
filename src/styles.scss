@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
 * {
   margin: 0 0;
@@ -12,7 +13,8 @@ h3,
 p,
 ul li,
 a,
-span {
+span,
+div {
   font-family: 'Raleway'
 }
 
@@ -32,4 +34,4 @@ h5 {
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e8e8e8}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e8e8e8;}
