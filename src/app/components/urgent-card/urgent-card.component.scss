@@ -1,0 +1,41 @@
+.urgent_card {
+  box-shadow: none;
+  border: 1px solid #e8e8e8;
+
+  h5 {
+    color: rgb(179, 179, 179);
+    font-weight: 700;
+  }
+
+  .mat-list {
+    border-bottom: 1px solid rgb(233, 233, 233);
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .list_content {   
+
+    
+      h6 {
+        color:#808080;
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-family: 'Roboto'
+      }
+    }
+  }
+
+  
+
+  .actions_content {
+    padding: 0 24px;
+
+    a {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+  }
+  
+  
+}

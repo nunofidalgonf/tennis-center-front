@@ -1,3 +1,21 @@
-<p>
-  homepage works!
-</p>
+<section id="homepage">
+  <section class="container" id="homepage_intro">
+    <div id="home_title">
+      <h2>Dashboard</h2>
+    </div>
+  </section>
+  <section class="container" id="dashboard_content">
+    <!-- <div id="first_section">
+      <app-urgent-card></app-urgent-card>
+    </div>
+    <div id="second_section">
+      <app-urgent-card></app-urgent-card>
+    </div>
+    <div id="third_section">
+      <app-urgent-card></app-urgent-card>
+    </div> -->
+    <mat-grid-list cols="12" rowHeight="500px">
+      <mat-grid-tile colspan="2"><app-urgent-card></app-urgent-card></mat-grid-tile>
+    </mat-grid-list>
+  </section>
+</section>

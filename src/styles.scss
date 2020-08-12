@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
 * {
@@ -10,12 +11,20 @@
 h1,
 h2,
 h3,
+h4,
+h5,
+h6
+{
+  font-family: 'Raleway'
+}
+
+
 p,
 ul li,
 a,
 span,
 div {
-  font-family: 'Raleway'
+  font-family: 'Roboto'
 }
 
 h1 {
@@ -29,9 +38,24 @@ h2 {
   margin: 40px 0 25px 0;
 }
 
-h5 {
-  font-size: 1.2em;
+h4 {
+  font-size: 1.5em;
 }
 
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+a {color: grey; text-decoration: none;}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e8e8e8;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #fbfbfb;}
+div, section {box-sizing: border-box;}
+.mat-grid-tile .mat-figure {
+  justify-content: flex-start !important ;
+  align-items: flex-start !important;
+}

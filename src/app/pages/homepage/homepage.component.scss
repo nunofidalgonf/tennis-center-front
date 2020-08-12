@@ -1,0 +1,30 @@
+#homepage {
+  position: relative;
+  float: left;
+  width: calc(100% - 280px);
+  padding: 20px 54px;
+  box-sizing: border-box;
+
+  #homepage_intro {
+    margin-bottom: 60px;
+
+    h2 {
+      margin-top: 23px;
+    }
+  }
+
+  #dashboard_content {
+    #first_section, #third_section {
+      width: 20%;
+      float: left;
+      box-sizing: border-box;
+      padding: 10px 15px;
+    }
+    #second_section {
+      width: 50%;
+      float: left;
+      box-sizing: border-box;
+      padding: 10px 15px;
+    }
+  }
+}
