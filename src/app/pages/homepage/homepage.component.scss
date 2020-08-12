@@ -14,17 +14,19 @@
   }
 
   #dashboard_content {
-    #first_section, #third_section {
-      width: 20%;
-      float: left;
-      box-sizing: border-box;
-      padding: 10px 15px;
-    }
-    #second_section {
-      width: 50%;
-      float: left;
-      box-sizing: border-box;
-      padding: 10px 15px;
+    #top_content {
+      .full-space {
+        width: 100%;
+        padding: 0 10px;
+  
+        // &:first-child {
+        //   padding-left: 0
+        // }
+  
+        // &:last-child {
+        //   padding-right: 0;
+        // }
+      }
     }
   }
 }

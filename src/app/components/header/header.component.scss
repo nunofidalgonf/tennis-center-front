@@ -64,6 +64,7 @@ header {
 
           .mat-icon {
             margin-right: 20px;
+            vertical-align:middle;
           }
     
           &.router-link-active {
@@ -101,6 +102,7 @@ header {
           .mat-icon {
             font-size: 20px;
             margin-right: 10px;
+            vertical-align:middle;
           }
         }
 
@@ -112,6 +114,7 @@ header {
             color: grey;
             font-size: 20px;
             margin-right: 10px;
+            vertical-align:middle;
           }
         }
       }

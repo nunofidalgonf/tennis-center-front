@@ -14,8 +14,10 @@
     <div id="third_section">
       <app-urgent-card></app-urgent-card>
     </div> -->
-    <mat-grid-list cols="12" rowHeight="500px">
-      <mat-grid-tile colspan="2"><app-urgent-card></app-urgent-card></mat-grid-tile>
+    <mat-grid-list cols="12" id="top_content" rowHeight="500px">
+      <mat-grid-tile colspan="2"><app-urgent-card class="full-space"></app-urgent-card></mat-grid-tile>
+      <mat-grid-tile colspan="8"><app-urgent-card class="full-space"></app-urgent-card></mat-grid-tile>
+      <mat-grid-tile colspan="2"><app-urgent-card class="full-space"></app-urgent-card></mat-grid-tile>
     </mat-grid-list>
   </section>
 </section>
